@@ -16,7 +16,7 @@ $("#talk").click(function(e) {
 	{
 		value = $("#chatbox").text();
 	}
-	var myurl= "http://www.cleverbot.com/getreply?key=CC77xfCzAkGo092Mooho0trqnB"
+	var myurl= "http://www.cleverbot.com/getreply?key=MYKEY"
 		+ "&input=" + $("#chatbox").val
 		+ "&cs=" + convoState
 		+ "&cb_settings_tweak1" + getPersonality(botTurn, 1)
