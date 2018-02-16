@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lab 2</title>
+    <title>Chatbot Sandbox</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-	<h1>Chatbot Showdown!</h1>
-	<div>
-		<img src="avatar1">
+	<h1>Welcome to the Chatbot Sandbox!</h1>
+	<div id="chatarea">
+		<img src="images/avatar1.png">
 		<p id="chatbox">
-			
+		
 		</p>
-		<img src="avatar2">
+		<img src="images/avatar2.png">
+	</div>
+	<div id="formarea">
+	<div>
+	<label for="botp1">Bot 1's personality:</label>
+    <select name="botp1" id="pbot1">
+      <option selected="selected">Normal</option>
+      <option>Quirky</option>
+      <option>Talkative</option>
+      <option>Shy</option>
+    </select>
 	</div>
 	<form>
-		<label id="prompt">What should the chatbots talk about?</label><br/>
-		<input id="topic" type="text"></input>
-		<input id="talk" type="submit" value="Talk"></input>
+		<label id="prompt">What should the chatbots talk about?</label></br>
+		<input id="topic" type="text"></input></br>
+		<input id="talk" type="submit" value="Talk!"></input></br>
+		<label id="prompt">Press "Talk" to advance the current conversation (you may have to wait a few seconds).</br> 
+		Or enter a phrase in the text box to begin a new conversation!</label>
 	</form>
-	<label for="botp1">Bot 1's personality:</label>
-    <select name="botp1" id="botp1">
-      <option selected="selected">Normal</option>
-      <option>Quirky</option>
-      <option>Talkative</option>
-      <option>Shy</option>
-    </select>
+	<div>
 	<label for="botp2">Bot 2's personality:</label>
-	<select name="botp2" id="botp2">
+	<select name="botp2" id="pbot2">
       <option selected="selected">Normal</option>
       <option>Quirky</option>
       <option>Talkative</option>
       <option>Shy</option>
     </select>
-	<button id="new" type="button">New Conversation!</button>
-	<a id="footer" href="https://github.com/BYU-CS260-Winter-2018/lab-2-sigma144">Link to GitHub</a>
+	</div>
+	</div>
+	
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script text="type/javascript" src="script.js">
     </script>
-
   </body>
+  <footer>
+	<a id="footer" href="https://github.com/sigma144/CS260CP2">Link to GitHub</a>
+  </footer>
 </html>
